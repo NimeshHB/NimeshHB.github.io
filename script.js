@@ -1,6 +1,3 @@
-// script.js
-
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -12,9 +9,15 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+// Toggle menu
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
 /* Existing CSS code here */
-
 #nimesh {
     display: inline-block;
     animation: colorChange 5s infinite;
@@ -27,5 +30,3 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     75% { color: #32cd32; } /* limegreen */
     100% { color: #6a0dad; }
 }
-
-
