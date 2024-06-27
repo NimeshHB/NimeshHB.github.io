@@ -7,18 +7,80 @@
     <link rel="stylesheet" href="stylesabout.css">
 </head>
 <body>
-    <header>
-        <nav>
-            
-            <div class="logo" id="nlogo"> <a href="../home/index.html">NimeshHB.design</a></div>
-            <ul>
-                <li><a href="../home/index.html">About</a></li>
-                <li><a href="#work">Work</a></li>  
-                <li><a href="#work">Gallary</a></li>         
-                <li><a href="../home/indexlinktree.html">LinkeTree</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar Example</title>
+      
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+        <!-- Custom styles -->
+        <style>
+            .navbar {
+                background-color: #ffffff; /* Navbar background color */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+            }
+    
+            .navbar-brand {
+                font-size: 1.5rem; /* Adjust logo size */
+                font-weight: bold;
+            }
+    
+            .navbar-nav .nav-item {
+                margin-right: 10px; /* Adjust spacing between nav items */
+            }
+    
+            .navbar-nav .nav-link {
+                color: #343a40; /* Navbar link color */
+            }
+    
+            .navbar-nav .nav-link:hover {
+                color: #007bff; /* Navbar link hover color */
+            }
+    
+            .navbar-toggler-icon {
+                color: #007bff; /* Toggle button color */
+            }
+        </style>
+    </head>
+    <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">nimesh4.me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallary/gallary.html">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/indexlinktree.html">LinkTree</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Optional JavaScript; Popper.js; and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <section class="intro1">
         <div class="intro-text1">
@@ -27,7 +89,7 @@
             
         </div>
         <div class="intro-image1">
-            <img src="../home/hero1.jpg" width="360" height="440"   alt="hi">
+            <img src="/hero1.jpg" width="auto" height="auto"   alt="hi">
         </div>
     </section>
 
@@ -35,7 +97,7 @@
     <section class="intro2">
 
         <div class="intro-image2">
-            <img src="../home/beach.jpg" width="360" height="440"   alt="hi">
+            <img src="/beach.jpg" width="ml-auto" height="auto"   alt="hi">
         </div>
 
         <div class="intro-text2">
@@ -90,5 +152,9 @@
     <footer>
         <p>© 2024 NimeshHB.design</p>
     </footer>
+    <!-- Optional JavaScript; Popper.js; and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
