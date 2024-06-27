@@ -1,32 +1,28 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+
+/*nav bar */
+
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
         });
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
     });
-});
-
-// Toggle menu
-const menuToggle = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-/* Existing CSS code here */
-#nimesh {
-    display: inline-block;
-    animation: colorChange 5s infinite;
 }
 
-@keyframes colorChange {
-    0% { color: #6a0dad; }
-    25% { color: #ff6347; } /* tomato */
-    50% { color: #4682b4; } /* steelblue */
-    75% { color: #32cd32; } /* limegreen */
-    100% { color: #6a0dad; }
-}
+navSlide();
