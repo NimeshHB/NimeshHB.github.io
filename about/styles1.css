@@ -45,27 +45,24 @@ body {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #ffffff; /* Section background color */
-   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Section box shadow */
     border-radius: 10px; /* Section border radius */
     margin-top: 20px; /* Section top margin */
 }
 
 .intro-text {
     max-width: 100%;
-    padding: 4%;
 }
 
 .intro-text h1 {
     font-size: 3em;
     margin: 0;
-    font-weight: bold;
 }
 
 .intro-text .highlight {
-    color: #ffbb00;
+    color: #6a0dad;
 }
 
 .intro-text p {
