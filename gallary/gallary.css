@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +11,23 @@ body {
     height: 100vh;
 }
 
+header {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .title h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header .title h2 {
+    font-size: 24px;
+    color: #888;
+    margin: 0;
+}
 
 main {
     flex: 1;
@@ -24,7 +43,7 @@ main {
 
 .grid-item {
     overflow: hidden;
-    height: 220px; width: 220px; /* Adjust height as needed */
+    height: auto; /* Adjust height as needed */
 }
 
 .grid-item img {
@@ -38,6 +57,24 @@ main {
     transform: scale(1.05);
 }
 
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .header .title h1 {
+        font-size: 24px;
+    }
+
+    .header .title h2 {
+        font-size: 18px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .grid-item {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+}
 
 
 
@@ -77,172 +114,5 @@ body {
 @media (max-width: 768px) {
     .navbar-nav {
         margin-top: 10px; /* Adjust mobile navbar top margin */
-    }
-}
-
-/* Additional body styles */
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #ffffff; /* Section background color */
-   
-    border-radius: 10px; /* Section border radius */
-    margin-top: 20px; /* Section top margin */
-}
-
-.intro-text {
-    max-width: 100%;
-    padding: 4%;
-}
-
-.intro-text h1 {
-    font-size: 3em;
-    margin: 0;
-    font-weight: bold;
-}
-
-.intro-text .highlight {
-    color: #ffbb00;
-}
-
-.intro-text p {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: #000;
-    color: #fff;
-}
-
-.btn-secondary {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-}
-
-.intro-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 1px;
-    background-color: #fff;
-    margin-top: 10px;
-    border-radius: 10px; /* Footer border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Footer box shadow */
-}
-
-@keyframes highlight {
-    0% { color: #edc500; }
-    25% { color: #ff6347; } /* tomato */
-    50% { color: #008cff; } /* steelblue */
-    75% { color: #000000; } /* limegreen */
-    100% { color:  #edc500; }
-}
-
-#explore-work {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    margin-top: 20px; /* Section top margin */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Section box shadow */
-    border-radius: 10px; /* Section border radius */
-}
-
-#explore-work h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
-}
-
-.work-items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.work-item {
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 300px;
-    text-align: left;
-    margin: 10px;
-}
-
-.work-item img {
-    width: 100%;
-    height: auto;
-}
-
-.work-item h3 {
-    font-size: 1.2em;
-    margin: 15px 10px;
-}
-
-.work-item p {
-    font-size: 1em;
-    color: #666;
-    margin: 0 10px 15px;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-    .intro {
-        flex-direction: row;
-        text-align: left;
-    }
-
-    .intro-text {
-        max-width: 50%;
-    }
-
-    .intro-image {
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li a {
-        padding: 10px 20px;
     }
 }
