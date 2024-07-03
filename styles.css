@@ -56,6 +56,7 @@ body {
 .intro-text {
     max-width: 100%;
     padding: 4%;
+    
 }
 
 .intro-text h1 {
@@ -95,12 +96,21 @@ body {
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
+
+}
+
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   
 }
 
 .intro-image img {
     max-width: 100%;
     border-radius: 10px;
     margin-top: 20px;
+    
 }
 
 footer {
