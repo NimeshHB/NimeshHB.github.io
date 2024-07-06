@@ -1,3 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const logoItems = document.querySelectorAll('.logo-item');
+  
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = 'scale(1)';
+                entry.target.style.opacity = '1';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+  
+    logoItems.forEach(item => {
+        observer.observe(item);
+    });
+  });
 
 
 /*nav bar */
@@ -26,3 +43,23 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const logoItems = document.querySelectorAll('.logo-item');
+  
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = 'scale(1)';
+                entry.target.style.opacity = '1';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+  
+    logoItems.forEach(item => {
+        observer.observe(item);
+    });
+  });
