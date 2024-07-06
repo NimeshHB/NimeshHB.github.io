@@ -178,6 +178,13 @@ footer {
     margin: 0 10px 15px;
 }
 
+.button1{
+    align-items: center;
+    color: #ff6347;
+}
+
+
+
 /* Media Queries */
 @media (min-width: 768px) {
     .intro {
@@ -213,3 +220,81 @@ footer {
         padding: 10px 20px;
     }
 }
+
+
+
+
+/* Media */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.customers-section {
+    text-align: center;
+    padding: 200px 80px;
+}
+
+.customers-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.customers-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.customers-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 96%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.logo-item img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.logo-item:hover {
+    background-color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+    .logo-item {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customers-section h2 {
+        font-size: 2em;
+    }
+    .customers-section p {
+        font-size: 1em;
+    }
+    .logo-item {
+        width: 50px;
+        height: 50px;
+    }
+}
+
